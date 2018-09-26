@@ -2,7 +2,6 @@ require 'yaml'
 require 'pry'
 
 def load_library(file_path)
-  binding.pry
  list = YAML.load_file(file_path)
 end
 
