@@ -18,7 +18,7 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
   list = YAML.load_file(file_path)
-  
+  binding.pry
 end
 
 def get_english_meaning
