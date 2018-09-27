@@ -14,10 +14,11 @@ def load_library(file_path)
    library["get_meaning"][japenese] = meaning
  end
  library
+ binding.pry
 end
 
 def get_japanese_emoticon(file_path, emoticon)
-  list = YAML.load_file(file_path)
+  list = YAML.load_library(file_path)
   list["get_emoticon"].each do |meaning,value|
     if meaning == emoticon
       return value
