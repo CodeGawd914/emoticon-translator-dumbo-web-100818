@@ -21,9 +21,8 @@ def get_japanese_emoticon(file_path, emoticon)
   list["get_emoticon"].each do |meaning,value|
     if meaning == emoticon
       return value
-      
-  binding.pry
-end
+    end
+  end
 end
 
 def get_english_meaning
