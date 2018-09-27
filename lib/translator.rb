@@ -17,8 +17,8 @@ def load_library(file_path)
 end
 
 def get_japanese_emoticon(file_path, emoticon)
-  list = YAML.load_library(file_path)
-  list["get_emoticon"].each do |meaning,value|
+  haxh = load_library(file_path)
+  haxh["get_emoticon"].each do |meaning,value|
     if meaning == emoticon
       return value
     end
