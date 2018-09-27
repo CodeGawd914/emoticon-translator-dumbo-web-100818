@@ -19,7 +19,8 @@ end
 def get_japanese_emoticon(file_path, emoticon)
   list = YAML.load_file(file_path)
   list.each do |meaning,value|
-    if 
+    if meaning == emoticon
+      return value
   binding.pry
 end
 end
